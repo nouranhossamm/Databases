@@ -102,11 +102,14 @@ Changes the data type of an existing column.
 ```sql
 ALTER TABLE table_name
 MODIFY column_name new_data_type;
+```
 
 ## 15. Delete Column in the Table
 Removes a column from an existing table.
 ```sql
 ALTER TABLE table_name
 DROP COLUMN column_name;
+```
+
 
 
