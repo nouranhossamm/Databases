@@ -111,5 +111,28 @@ ALTER TABLE table_name
 DROP COLUMN column_name;
 ```
 
+## 16. Show Tables
+Lists all tables in the currently selected database.
+```sql
+SHOW TABLES;
+```
+
+## 17. Rename Table
+Renames an existing table in the database.
+```sql
+ALTER TABLE old_table_name RENAME TO new_table_name;
+```
+
+## 18. Drop Table
+Deletes an existing table in the database.
+```sql
+DROP TABLE table_name;
+```
+
+
+
+
+
+
 
 
