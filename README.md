@@ -129,6 +129,40 @@ Deletes an existing table in the database.
 DROP TABLE table_name;
 ```
 
+## 19. Insert Into Table
+Inserts one or more rows into a table in the database.
+```sql
+INSERT INTO table_name (column1, column2, ...) 
+VALUES (value1, value2, ...);
+```
+
+## 20. Insert Into Multiple Rows
+Inserts multiple rows into a table in the database.
+```sql
+INSERT INTO table_name (column1, column2, ...) 
+VALUES (value1, value2, ...),
+       (value3, value4, ...),
+       (value5, value6, ...);
+```
+
+## 21. Using WHERE with SELECT
+Filters the results of a SELECT statement based on conditions specified in the WHERE clause.
+```sql
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+```
+Example:
+Let's say we have a table called employees with the following columns:id, name, department, and salary.
+We want to retrieve the name and salary of all employees in the Sales department who earn more than $50,000.
+```sql
+SELECT name, salary
+FROM employees
+WHERE department='Sales' AND salary > 50000;
+```
+
+
+
 
 
 
