@@ -161,6 +161,60 @@ FROM employees
 WHERE department='Sales' AND salary > 50000;
 ```
 
+## 22. Update
+Updates existing records in a table based on a condition.
+```sql
+UPDATE table_name
+SET column_name = new_value
+WHERE condition;
+```
+Example:
+```sql
+UPDATE Student
+SET FIRST_NAME = 'John'
+WHERE Student_ID = 1;
+```
+
+## 23. Order By
+Sorts the result set in ascending or descending order based on one or more columns.
+```sql
+SELECT column_name(s)
+FROM table_name
+ORDER BY column_name [ASC|DESC];
+```
+Example:
+```sql
+SELECT * 
+FROM Student
+ORDER BY FIRST_NAME ASC;
+```
+
+## 24. Delete
+Deletes records from a table based on a condition.
+```sql
+DELETE FROM table_name
+WHERE condition;
+```
+Example:
+```sql
+DELETE FROM Student
+WHERE Student_ID = 1;
+```
+
+## 25. Group By
+Groups rows that have the same values into summary rows, often used with aggregate functions like `COUNT`, `SUM`, `AVG`, etc.
+```sql
+SELECT column_name, COUNT(*)
+FROM table_name
+GROUP BY column_name;
+```
+Example:
+```sql
+SELECT FIRST_NAME, COUNT(*)
+FROM Student
+GROUP BY FIRST_NAME;
+```
+
 
 
 
